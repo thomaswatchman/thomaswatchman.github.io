@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: bisque;
+    margin: 0;
+    padding: 20px;
+    border: 0;
+}
+body {
+    width: 100%;
+    background-color: bisque;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+.navbar {
+    background-color: rgb(78, 72, 77);
+    display: flex;
+    padding: 20px;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.navbar ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navbar ul li {
+    display: inline-block;
+}
+
+.navbar ul li a {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    display: block;
+    color: white;
+}
+
+.navbar ul li a:hover {
+    color: blue;
+}
+main {
+    width: 100%;
+}
+
+.photo-container {
+    background-color: bisque;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-content: space-evenly;
+    display: grid;
+    margin: 0;
+    border: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.photo {
+    background-color: azure;
+    margin: 10px;
+    padding: 10px;
+    border: 10px;
+    border-radius: 2%;
+
+}
+
+.photo img {
+    width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 992px) {
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar ul li {
+        margin-bottom: 10px;
+    }
+    .links-table {
+        flex-wrap: wrap;
+    }
+    .links-table tr {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .photo-container {
+        grid-template-columns: 1fr;
+        width:90%;
+        justify-content: center;
+    }
+
+    .photo {
+        margin: 5px; /* Adjust margins */
+        padding: 5px; /* Adjust padding */
+        border-width: 2px; /* Shrink border size */
+    }
+
+    .photo img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .navbar ul {
+        margin-top: 0;
+    }
+
+    .photo-container {
+        padding: 10px;
+    }
+
+    .photo {
+        margin: 10px auto;
+    }
+
+}

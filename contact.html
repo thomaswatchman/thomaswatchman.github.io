@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <title>Contact</title>
+    <link rel="icon" type="image/png" href="media/favicon.png" />
+    <link rel="stylesheet" href="./contact.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Contact</h1>
+    </header>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="photo.html">Photo</a></li>
+        <li><a href="video.html">Video</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li>
+          <a href="https://www.sony.ca/en" target="_blank">Sony Cameras</a>
+        </li>
+      </ul>
+    </nav>
+    <div class="form-container">
+      <form id="myForm" action="#" method="post">
+        <h2>Contact</h2>
+        <div class="input-container">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" />
+        </div>
+        <div class="input-container">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" />
+        </div>
+        <div class="input-container">
+          <label for="message">message:</label>
+          <textarea id="message" name="message"></textarea>
+        </div>
+        <div class="input-container">
+          <label for="terms">terms</label>
+          <input type="checkbox" id="terms" name="terms"/>
+        </div>
+        <div class="button-container">
+          <input id="submit-button" type="submit" value="Sign up" />
+        </div>
+        <div id="message-panel"></div>
+      </form>
+    </div>
+    <ol id="social-list">
+      <li>Instagram: thomaswatchman</li>
+      <li>Facebook: thomaswatchman</li>
+      <li>YouTube: thomaswatchman</li>
+    </ol>
+    <script src="./contact.js"></script>
+  </body>
+</html>
